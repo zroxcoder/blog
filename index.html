@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Connect</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-bar">
+  <div class="left">
+    <span class="site-icon">B</span>
+  </div>
+
+  <div class="right">
+    <div class="dropdown">
+      <button class="dropbtn">More ▾</button>
+      <div class="dropdown-content">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN CONTAINER -->
+<div class="container">
+
+  <!-- CONTENT -->
+  <main class="content">
+    <h1>Connect</h1>
+    <p class="intro">
+      Hi everyone, I will share my ideas, problems and other things related to me and my idea.
+      So join me in my journey
+    </p>
+
+    <div id="postList"></div>
+
+    <div id="postView" class="hidden">
+      <h2 id="postTitle"></h2>
+      <p id="postBody"></p>
+      <button onclick="goBack()">← Back</button>
+    </div>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h3>Search This Blog</h3>
+    <input type="text" id="blogSearch" placeholder="Search by title..." />
+
+    <h3>About Me</h3>
+    <p><strong>Aayush Rauniyar</strong></p>
+    <a href="profile.html">View my complete profile</a>
+  </aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
