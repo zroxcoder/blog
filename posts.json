@@ -9,7 +9,7 @@
    "title": "TCP chat system",
    "body": "I have made a TCP chat system using C langauge and socket programming. This is a simple chat system where multiple clients can connect to a server and chat with each other in real-time. They have to connect in same Network, this was basicly LAN chat system. I have learned a lot about socket programming and how TCP works. This projects was really fun to make and I have enjoyed a lot while making this.<br><br><img src='images/TCP.png' alt='TCP.png' class='post-body-image'><br><br> User with same network can chat with each other using this system, but they need to host server in devices then rest of devices can connect to that server using IP address of hosted device and client can join with CMD panel they just need ./client.exe and IP address of server device. for hosting server they need to run ./server.exe in msys2 ucrt64 terminal, they can download msys2 from browser and setup ucrt64 or 32 bits terminal.<br><br> I have made this project for learning purpose and to understand how TCP and socket programming works.",
    "category": "projects",
-   "preview": "images/tcp.png"
+   "preview": "images/TCP.png"
   }
   
 ]
