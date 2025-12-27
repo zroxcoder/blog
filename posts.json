@@ -1,0 +1,15 @@
+[
+  {
+    "title": "First Hackathon Competition",
+    "body": "My first Hackathon cometiton in High school, I have won and secured Third place. We have education theme for competition. I have made EduMate website using HTML, CSS, JS, and INDEXDDB. Basically this website helps studnets to track their works, assignments and keep them track about what they have finished or what was not finished. This is my first competitions I'm so much nervous and excited to make something!! I have made small projects before this but this one was special. I have learned a lot things from this hackathon. Teamwork, Time management, and lots of things, I really enjoyed this so much. Every team have made so much good projects, I just so much nervous my project will not win. When our turn comes for PPT I become super extra nervous but any how I have managed that, and done good PPT too. On result day I just thinking My project will not win,,,.. when results announced, I was so happy to see my project won 3rd place. From AS 2 team wins one team 1st place and me 3rd place. <br><br><img src='images/medal.jpeg' alt='medeal.jpg' class='post-body-image'> <br><br><img src='images/certificate.jpeg'>",
+    "category": "competition",
+    "preview": "images/edumate.png"
+  },
+  {
+   "title": "TCP chat system",
+   "body": "I have made a TCP chat system using C langauge and socket programming. This is a simple chat system where multiple clients can connect to a server and chat with each other in real-time. They have to connect in same Network, this was basicly LAN chat system. I have learned a lot about socket programming and how TCP works. This projects was really fun to make and I have enjoyed a lot while making this.<br><br><img src='images/TCP.png' alt='TCP.png' class='post-body-image'><br><br> User with same network can chat with each other using this system, but they need to host server in devices then rest of devices can connect to that server using IP address of hosted device and client can join with CMD panel they just need ./client.exe and IP address of server device. for hosting server they need to run ./server.exe in msys2 ucrt64 terminal, they can download msys2 from browser and setup ucrt64 or 32 bits terminal.<br><br> I have made this project for learning purpose and to understand how TCP and socket programming works.",
+   "category": "projects",
+   "preview": "images/tcp.png"
+  }
+  
+]
