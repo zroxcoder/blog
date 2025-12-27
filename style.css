@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  background: url("images/xp-bg.jpg") no-repeat center center fixed;
+  background: url("images/webbg.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -54,7 +54,7 @@ body {
 .content { width: 70%; }
 .sidebar { width: 30%; }
 
-h1 { font-size: 48px; color: #2c4fa3; }
+h1 { font-size: 35px; color: #2c4fa3; }
 .intro { margin-bottom: 20px; }
 
 /* POSTS */

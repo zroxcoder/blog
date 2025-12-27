@@ -1,0 +1,14 @@
+[
+  {
+    "title": "My First Blog Post",
+    "body": "My favorite image, Night view of stars.<br><br><img src='images/profile.jpg' alt='Example Image' class='post-body-image'>",
+    "category": "images",
+    "preview": "images/profile.jpg"
+  },
+  {
+    "title": "Another Blog Post",
+    "body": "This is another blog post content.<br><br><img src='images/another.jpg' alt='Another Image' class='post-body-image'>",
+    "category": "tutorial",
+    "preview": "images/another.jpg"
+  }
+]

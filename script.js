@@ -1,23 +1,22 @@
-// Posts array with category, optional preview image, and HTML content
-const posts = [
-  {
-    title: "My First Blog Post",
-    body: `
-      My favorite image image, Night view of stars.
-      <br><br>
-      <img src="images/profile.jpg" alt="Example Image" class="post-body-image">
-      
-    `,
-    category: "images",
-    preview: "images/profile.jpg"
-  },
-  ];
-  
+// Posts will be loaded from JSON
+let posts = [];
 
 // DOM elements
 const postList = document.getElementById("postList");
 const postView = document.getElementById("postView");
 const blogSearch = document.getElementById("blogSearch");
+
+// Load posts from JSON file
+async function loadPosts() {
+  try {
+    const response = await fetch('posts.json');
+    posts = await response.json();
+    renderPosts(); // render after loading
+    updateProfileStats();
+  } catch (err) {
+    console.error("Failed to load posts:", err);
+  }
+}
 
 // Render posts on blog page
 function renderPosts(filter = "") {
@@ -71,6 +70,10 @@ function openPost(index) {
 
   postList.classList.add("hidden");
   postView.classList.remove("hidden");
+
+  // Scroll to top of the post view
+  postView.scrollTop = 0;
+
   document.getElementById("postTitle").innerText = posts[index].title;
   document.getElementById("postBody").innerHTML = posts[index].body; // allow images/links
 }
@@ -102,6 +105,5 @@ function updateProfileStats() {
   if (categoriesElem) categoriesElem.innerText = `Categories / Topics: ${categories.join(", ")}`;
 }
 
-// Initial render
-if (postList) renderPosts();
-updateProfileStats();
+// Initial load
+loadPosts();
