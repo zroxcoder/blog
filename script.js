@@ -12,6 +12,15 @@ const posts = [
     preview: "images/profile.jpg"
   },
   
+  {
+    title: "second post test",
+    body: `
+    this is my test post for the blog system.
+    `,
+    category: "test",
+
+  },
+  
 ];
 
 // DOM elements
