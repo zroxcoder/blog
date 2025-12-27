@@ -3,24 +3,15 @@ const posts = [
   {
     title: "My First Blog Post",
     body: `
-      This is the full content of my first blog post. I will share my ideas and experiences here.
+      My favorite image image, Night view of stars.
       <br><br>
-      <img src="images/xp-bg.jpg" alt="Example Image" class="post-body-image">
-      <br>
-      Check out <a href="https://youtube.com" target="_blank">this link</a>.
+      <img src="images/profile.jpg" alt="Example Image" class="post-body-image">
+      
     `,
-    category: "Personal Projects",
-    preview: "images/xp-bg.jpg"
+    category: "images",
+    preview: "images/profile.jpg"
   },
-  {
-    title: "Why I Started This Blog",
-    body: `
-      I created this blog to connect with people and document my journey.
-      <br>
-      <a href="https://github.com" target="_blank">Visit my GitHub</a>
-    `,
-    category: "Technology"
-  }
+  
 ];
 
 // DOM elements
