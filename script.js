@@ -35,7 +35,7 @@ The server is run using MSYS2 UCRT64 terminal.
 This project was made for learning purposes and helped me understand networking deeply.
     `,
     category: "projects",
-    preview: "images/tcp.png"
+    preview: "images/TCP.png"
   }
 ];
 
