@@ -111,13 +111,29 @@ h1 { font-size: 35px; color: #2c4fa3; }
 .read-more-btn:hover { background: #1f3b7a; }
 
 /* Full post view */
+/* ===============================
+   BLOG POST IMAGES (FIXED SIZE)
+   =============================== */
 #postView img {
+  display: block;
   max-width: 100%;
+  width: 75%;              /* controls final image size */
   height: auto;
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  margin: 10px 0;
+  margin: 20px auto;       /* center image */
+  border-radius: 10px;
+  border: 1px solid #bbb;
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  object-fit: contain;     /* prevents stretching */
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #postView img {
+    width: 95%;
+  }
+}
+
 #postView a { color: #2c4fa3; text-decoration: underline; }
 #postView a:hover { text-decoration: none; }
 
@@ -129,7 +145,7 @@ button { margin-top: 20px; padding: 6px 12px; cursor: pointer; }
 .post::after { content: ""; display: table; clear: both; }
 
 /* Search input */
-#blogSearch { width: 100%; padding: 5px; margin-bottom: 15px; }
+#blogSearch { width: 65%; padding: 3px; margin-bottom: 15px; }
 
 
 /* Clean list style */

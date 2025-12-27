@@ -1,109 +1,161 @@
-// Posts will be loaded from JSON
-let posts = [];
+// ===============================
+// POSTS (WRITE FREELY – PRESS ENTER)
+// ===============================
+let posts = [
+  {
+    title: "First Hackathon Competition",
+    date: "2024-11-20",
+    body: `
+My first hackathon competition in high school where I secured 3rd place.
+The competition theme was education, and I built a website called EduMate using HTML, CSS, JavaScript, and IndexedDB.
+EduMate helps students track assignments, manage tasks, and understand what work is completed or pending.
+This was my first big competition, so I was extremely nervous and excited at the same time.
+During the PPT presentation, I was shaking, but I managed to present confidently.
+On result day, I was not expecting to win, but I was very happy when my project secured 3rd place.
+<img src="images/medal.jpeg" alt="Medal" class="post-body-image">
+<img src="images/certificate.jpeg" alt="Certificate">
+    `,
+    category: "competition",
+    preview: "images/edumate.png"
+  },
+  {
+    title: "TCP Chat System",
+    date: "2024-12-05",
+    body: `
+I built a TCP-based chat system using C language and socket programming.
+This system allows multiple clients to connect to a server and chat in real time over the same local network (LAN).
+Through this project, I learned how TCP works and how socket communication is implemented.
+How it works:
+- One device hosts the server using ./server.exe
+- Other devices connect using ./client.exe and the server IP address
+The server is run using MSYS2 UCRT64 terminal.
 
-// DOM elements
+<img src="images/TCP.png" alt="TCP Chat System" class="post-body-image">
+
+This project was made for learning purposes and helped me understand networking deeply.
+    `,
+    category: "projects",
+    preview: "images/tcp.png"
+  }
+];
+
+// ===============================
+// DOM ELEMENTS
+// ===============================
 const postList = document.getElementById("postList");
 const postView = document.getElementById("postView");
 const blogSearch = document.getElementById("blogSearch");
+const postTitle = document.getElementById("postTitle");
+const postBody = document.getElementById("postBody");
 
-// Load posts from JSON file
-async function loadPosts() {
-  try {
-    const response = await fetch('posts.json');
-    posts = await response.json();
-    renderPosts(); // render after loading
-    updateProfileStats();
-  } catch (err) {
-    console.error("Failed to load posts:", err);
-  }
-}
-
-// Render posts on blog page
+// ===============================
+// RENDER POSTS (NEWEST FIRST)
+// ===============================
 function renderPosts(filter = "") {
   if (!postList) return;
 
   postList.innerHTML = "";
-  const filteredPosts = posts.filter(post =>
-    post.title.toLowerCase().includes(filter.toLowerCase())
-  );
+
+  const filteredPosts = posts
+    .filter(post => post.title.toLowerCase().includes(filter.toLowerCase()))
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
 
   if (filteredPosts.length === 0) {
-    postList.innerHTML = '<div class="no-posts">No posts.</div>';
-    updateProfileStats();
+    postList.innerHTML = "<div class='no-posts'>No posts found.</div>";
     return;
   }
 
-  filteredPosts.forEach((post, index) => {
+  filteredPosts.forEach((post) => {
+    const index = posts.indexOf(post);
     const div = document.createElement("div");
     div.className = "post";
 
-    const previewHTML = post.preview
-      ? `<img src="${post.preview}" alt="Preview" class="post-preview">`
+    const previewImage = post.preview
+      ? `<img src="${post.preview}" class="post-preview" alt="Preview">`
       : "";
 
-    // Multi-line preview using slice and CSS clamp
-    const previewText = post.body.replace(/<[^>]+>/g, ""); // strip HTML
+    const previewText = post.body
+      .replace(/<[^>]*>/g, "")
+      .replace(/\n/g, " ")
+      .trim()
+      .slice(0, 180) + "...";
 
     div.innerHTML = `
-      ${previewHTML}
+      ${previewImage}
       <h3>${post.title}</h3>
+      <small style="color:#666;">
+        ${new Date(post.date).toDateString()} • ${post.category}
+      </small>
       <p class="post-preview-text">${previewText}</p>
-      <small>Category: ${post.category}</small>
       <button class="read-more-btn">Read More →</button>
-      <div style="clear:both;"></div>
+      <div style="clear: both;"></div>
     `;
 
-    div.querySelector(".read-more-btn").onclick = (e) => {
-      e.stopPropagation();
-      openPost(index);
-    };
-
+    div.querySelector(".read-more-btn").onclick = () => openPost(index);
     postList.appendChild(div);
   });
 
   updateProfileStats();
 }
 
-// Open a single post
+// ===============================
+// OPEN SINGLE POST
+// ===============================
 function openPost(index) {
   if (!postView || !postList) return;
 
   postList.classList.add("hidden");
   postView.classList.remove("hidden");
 
-  // Scroll to top of the post view
-  postView.scrollTop = 0;
+  postTitle.innerHTML = `
+    ${posts[index].title}
+    <div style="font-size:14px; color:#666; margin-top:5px;">
+      ${new Date(posts[index].date).toDateString()}
+    </div>
+  `;
 
-  document.getElementById("postTitle").innerText = posts[index].title;
-  document.getElementById("postBody").innerHTML = posts[index].body; // allow images/links
+  // Convert new lines to <br>
+  postBody.innerHTML = posts[index].body.replace(/\n/g, "<br>");
+
+  postView.scrollTop = 0;
 }
 
-// Go back to post list
+// ===============================
+// BACK BUTTON
+// ===============================
 function goBack() {
-  if (!postView || !postList) return;
-
   postView.classList.add("hidden");
   postList.classList.remove("hidden");
 }
 
-// Search functionality
+// ===============================
+// SEARCH
+// ===============================
 if (blogSearch) {
-  blogSearch.addEventListener("input", () => {
-    renderPosts(blogSearch.value);
+  blogSearch.addEventListener("input", e => {
+    renderPosts(e.target.value);
   });
 }
 
-// Update profile stats dynamically
+// ===============================
+// PROFILE STATS
+// ===============================
 function updateProfileStats() {
-  const totalPosts = posts.length;
-  const categories = [...new Set(posts.map(post => post.category))];
-
   const totalPostsElem = document.querySelector(".profile-info-total-posts");
   const categoriesElem = document.querySelector(".profile-info-categories");
 
-  if (totalPostsElem) totalPostsElem.innerText = `Total posts published: ${totalPosts}`;
-  if (categoriesElem) categoriesElem.innerText = `Categories / Topics: ${categories.join(", ")}`;
+  if (totalPostsElem) {
+    totalPostsElem.innerText = `Total posts published: ${posts.length}`;
+  }
+
+  if (categoriesElem) {
+    const categories = [...new Set(posts.map(p => p.category))];
+    categoriesElem.innerText = `Categories / Topics: ${categories.join(", ")}`;
+  }
 }
 
-// Initial load
-loadPosts();
+// ===============================
+// INIT
+// ===============================
+renderPosts();
+updateProfileStats();
