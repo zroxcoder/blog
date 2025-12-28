@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Connect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect - My Personal Blog</title>
   <link rel="icon" type="image/x-icon" href="images/c.ico"/>
   <link rel="stylesheet" href="style.css" />
   <style>
     /* Enhanced Main Content */
     .content h1 {
       color: #2c4fa3;
-      font-size: 32px;
-      margin-bottom: 10px;
-      padding-bottom: 10px;
+      font-size: 36px;
+      margin-bottom: 12px;
+      padding-bottom: 12px;
       border-bottom: 3px solid #2c4fa3;
       display: inline-block;
     }
@@ -19,132 +20,156 @@
     .intro {
       font-size: 16px;
       color: #444;
-      margin-bottom: 20px;
-      padding: 15px;
+      margin-bottom: 25px;
+      padding: 18px;
       background: linear-gradient(135deg, #f8f9ff 0%, #e8ecff 100%);
-      border-left: 4px solid #2c4fa3;
-      border-radius: 6px;
+      border-left: 5px solid #2c4fa3;
+      border-radius: 8px;
+      line-height: 1.7;
+      box-shadow: 0 2px 8px rgba(44, 79, 163, 0.08);
     }
 
     .intro bold {
       color: #2c4fa3;
       font-weight: bold;
+      font-size: 17px;
     }
 
     /* Post List Styling */
     #postList {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 25px;
     }
 
     .post {
       background: #fff;
-      padding: 20px;
-      border-radius: 10px;
+      padding: 22px;
+      border-radius: 12px;
       border: 1px solid #e0e4f5;
-      box-shadow: 0 3px 10px rgba(44, 79, 163, 0.08);
+      box-shadow: 0 4px 12px rgba(44, 79, 163, 0.1);
       transition: all 0.3s ease;
     }
 
     .post:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 20px rgba(44, 79, 163, 0.15);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(44, 79, 163, 0.2);
       border-color: #2c4fa3;
     }
 
     .post h3 {
       color: #2c4fa3;
-      margin: 0 0 8px 0;
-      font-size: 20px;
+      margin: 0 0 10px 0;
+      font-size: 22px;
+      line-height: 1.3;
     }
 
     .post-preview {
       max-width: 100%;
-      height: 180px;
+      height: 200px;
       object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 12px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+      border: 1px solid #e0e4f5;
     }
 
     .post-preview-text {
       color: #555;
-      font-size: 14px;
-      line-height: 1.6;
-      margin: 10px 0;
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 12px 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
     .read-more-btn {
       background: linear-gradient(135deg, #2c4fa3 0%, #1d357f 100%);
       color: white;
       border: none;
-      padding: 10px 20px;
-      border-radius: 6px;
+      padding: 12px 24px;
+      border-radius: 8px;
       cursor: pointer;
       font-weight: bold;
       font-family: inherit;
+      font-size: 15px;
       transition: all 0.3s ease;
+      box-shadow: 0 3px 8px rgba(44, 79, 163, 0.25);
+      width: 100%;
+      margin-top: 10px;
     }
 
     .read-more-btn:hover {
+      background: linear-gradient(135deg, #1d357f 0%, #0f1f4f 100%);
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(44, 79, 163, 0.3);
+      box-shadow: 0 5px 15px rgba(44, 79, 163, 0.35);
     }
 
     /* Post View */
     #postView {
       background: #fff;
-      padding: 25px;
-      border-radius: 10px;
+      padding: 28px;
+      border-radius: 12px;
       border: 1px solid #e0e4f5;
-      box-shadow: 0 3px 15px rgba(44, 79, 163, 0.1);
+      box-shadow: 0 4px 18px rgba(44, 79, 163, 0.12);
     }
 
     #postView h2 {
       color: #2c4fa3;
-      font-size: 26px;
-      margin-bottom: 15px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #e0e4f5;
+      font-size: 28px;
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 3px solid #e0e4f5;
+      line-height: 1.3;
     }
 
     #postView button {
       background: linear-gradient(135deg, #2c4fa3 0%, #1d357f 100%);
       color: white;
       border: none;
-      padding: 10px 20px;
-      border-radius: 6px;
+      padding: 13px 26px;
+      border-radius: 8px;
       cursor: pointer;
       font-weight: bold;
       font-family: inherit;
-      margin-top: 20px;
+      margin-top: 25px;
+      font-size: 15px;
       transition: all 0.3s ease;
+      box-shadow: 0 3px 10px rgba(44, 79, 163, 0.25);
     }
 
     #postView button:hover {
+      background: linear-gradient(135deg, #1d357f 0%, #0f1f4f 100%);
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(44, 79, 163, 0.3);
+      box-shadow: 0 5px 15px rgba(44, 79, 163, 0.4);
     }
 
     .post-body-image {
       max-width: 100%;
-      border-radius: 8px;
-      margin: 15px 0;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      width: 85%;
+      height: auto;
+      border-radius: 12px;
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+      border: 1px solid #ddd;
     }
 
     /* Sidebar Enhancements */
     .sidebar h3 {
       color: #2c4fa3;
-      font-size: 18px;
-      margin-bottom: 12px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid #2c4fa3;
+      font-size: 20px;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #2c4fa3;
     }
 
     .sidebar input[type="text"] {
       width: 100%;
-      padding: 12px 15px;
+      padding: 13px 16px;
       border: 2px solid #e0e4f5;
       border-radius: 8px;
       font-size: 14px;
@@ -156,12 +181,13 @@
     .sidebar input[type="text"]:focus {
       outline: none;
       border-color: #2c4fa3;
-      box-shadow: 0 0 0 3px rgba(44, 79, 163, 0.15);
+      box-shadow: 0 0 0 4px rgba(44, 79, 163, 0.18);
     }
 
     .sidebar p {
       color: #444;
-      line-height: 1.6;
+      line-height: 1.7;
+      font-size: 15px;
     }
 
     .sidebar a {
@@ -169,28 +195,31 @@
       text-decoration: none;
       font-weight: bold;
       display: inline-block;
-      padding: 10px 18px;
+      padding: 12px 20px;
       background: linear-gradient(135deg, #e8ecff 0%, #dfe3f4 100%);
-      border-radius: 6px;
-      margin-top: 10px;
+      border-radius: 8px;
+      margin-top: 12px;
       transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(44, 79, 163, 0.12);
     }
 
     .sidebar a:hover {
       background: linear-gradient(135deg, #2c4fa3 0%, #1d357f 100%);
       color: white;
       transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(44, 79, 163, 0.3);
     }
 
     /* No Posts Message */
     .no-posts {
       text-align: center;
-      padding: 40px 20px;
+      padding: 50px 25px;
       color: #666;
       font-style: italic;
       background: #f8f9ff;
-      border-radius: 10px;
+      border-radius: 12px;
       border: 2px dashed #d0d5e8;
+      font-size: 16px;
     }
 
     /* Hidden Class */
@@ -198,18 +227,109 @@
       display: none !important;
     }
 
-    /* Responsive */
-    @media (max-width: 800px) {
+    /* ===============================
+       MOBILE RESPONSIVE
+       =============================== */
+    @media (max-width: 768px) {
       .content h1 {
-        font-size: 26px;
+        font-size: 28px;
       }
-      
+
+      .intro {
+        font-size: 15px;
+        padding: 15px;
+      }
+
+      .intro bold {
+        font-size: 16px;
+      }
+
+      .post {
+        padding: 18px;
+      }
+
+      .post h3 {
+        font-size: 20px;
+      }
+
+      .post-preview {
+        height: 180px;
+      }
+
+      .post-preview-text {
+        font-size: 14px;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+      }
+
+      .read-more-btn {
+        padding: 13px 20px;
+        font-size: 15px;
+      }
+
+      #postView {
+        padding: 20px;
+      }
+
+      #postView h2 {
+        font-size: 24px;
+      }
+
+      #postView button {
+        width: 100%;
+        padding: 14px 22px;
+      }
+
+      .post-body-image {
+        width: 100%;
+      }
+
+      .sidebar h3 {
+        font-size: 18px;
+      }
+
+      .sidebar input[type="text"] {
+        padding: 12px 14px;
+      }
+
+      .sidebar a {
+        display: block;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .content h1 {
+        font-size: 24px;
+      }
+
+      .intro {
+        font-size: 14px;
+        padding: 12px;
+      }
+
+      .post {
+        padding: 15px;
+      }
+
       .post h3 {
         font-size: 18px;
       }
-      
+
       .post-preview {
-        height: 150px;
+        height: 160px;
+      }
+
+      #postView {
+        padding: 15px;
+      }
+
+      #postView h2 {
+        font-size: 22px;
+      }
+
+      .read-more-btn {
+        font-size: 14px;
       }
     }
   </style>
@@ -227,6 +347,7 @@
       <button class="dropbtn">More ▾</button>
       <div class="dropdown-content">
         <a href="about.html">About</a>
+        <a href="profile.html">Profile</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
@@ -240,7 +361,7 @@
   <main class="content">
     <h1>Blog Posts</h1>
     <p class="intro">
-      <bold>Welcome to my blog!</bold> Here I share my thoughts, projects, and experiences. Explore my posts below.
+      <bold>Welcome to my blog!</bold> Here I share my thoughts, projects, and experiences. Explore my posts below and join me on this journey.
     </p>
 
     <div id="postList"></div>
