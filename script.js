@@ -14,6 +14,8 @@ During the PPT presentation, I was shaking, but I managed to present confidently
 On result day, I was not expecting to win, but I was very happy when my project secured 3rd place.
 <img src="images/medal.jpeg" alt="Medal" class="post-body-image">
 <img src="images/certificate.jpeg" alt="Certificate">
+This experience taught me a lot about teamwork, time management, and the importance of practice. It was
+a memorable experience that motivated me to participate in more competitions in the future. 
     `,
     category: "competition",
     preview: "images/edumate.png"
