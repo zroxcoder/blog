@@ -379,6 +379,17 @@
     <h3>Search Blog</h3>
     <input type="text" id="blogSearch" placeholder="Search by title..." />
 
+    <!-- VIDEO MODAL -->
+<div id="videoModal" class="video-modal hidden">
+  <div class="video-modal-overlay"></div>
+  <div class="video-modal-content">
+    <button class="video-modal-close" onclick="closeVideoModal()">&times;</button>
+    <div class="video-modal-player">
+      <video id="modalVideo" controls></video>
+    </div>
+  </div>
+</div>
+
     <h3>About Me</h3>
     <p><strong>See profile for about me!</strong></p>
     <a href="profile.html">View Profile →</a>

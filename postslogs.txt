@@ -3,3 +3,58 @@
 
 ## Domain logs
 blogmate.me purchase on 27 dec 2025
+
+##video/audio/youtube/viemo post
+
+video
+{
+  title: "My Project Demo",
+  date: "2026-01-15",
+  body: `
+    Check out my latest project in action!
+    <video src="videos/demo.mp4" class="post-body-video" controls></video>
+    This demonstrates all the features I built.
+  `,
+  category: "demo",
+  preview: "videos/demo.mp4",
+  videoThumbnail: "images/demo-thumb.jpg", // Optional
+  mediaType: "video",
+  videoDuration: "3:45" // Optional
+}
+
+audio
+{
+  title: "Tech Podcast Episode 1",
+  date: "2026-01-20",
+  body: `
+    Listen to my thoughts on web development trends.
+    <audio src="audio/podcast.mp3" class="post-body-audio" controls></audio>
+  `,
+  category: "podcast",
+  mediaType: "audio"
+}
+
+youtube
+{
+  title: "Tech Podcast Episode 1",
+  date: "2026-01-20",
+  body: `
+    Listen to my thoughts on web development trends.
+    <audio src="audio/podcast.mp3" class="post-body-audio" controls></audio>
+  `,
+  category: "podcast",
+  mediaType: "audio"
+}
+
+viemo
+{
+  title: "Portfolio Showcase",
+  date: "2026-02-01",
+  body: `
+    My portfolio walkthrough:
+    <iframe src="https://player.vimeo.com/video/VIDEO_ID" class="post-body-embed" allowfullscreen></iframe>
+  `,
+  category: "showcase",
+  embedUrl: "https://player.vimeo.com/video/VIDEO_ID",
+  mediaType: "embed"
+}
