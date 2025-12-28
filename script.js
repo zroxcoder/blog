@@ -6,16 +6,15 @@ let posts = [
     title: "First Hackathon Competition",
     date: "2025-12-01",
     body: `
-My first hackathon competition in high school where I secured 3rd place.
-The competition theme was education, and I built a website called EduMate using HTML, CSS, JavaScript, and IndexedDB.
-EduMate helps students track assignments, manage tasks, and understand what work is completed or pending.
-This was my first big competition, so I was extremely nervous and excited at the same time.
-During the PPT presentation, I was shaking, but I managed to present confidently.
-On result day, I was not expecting to win, but I was very happy when my project secured 3rd place.
-<img src="images/medal.jpeg" alt="Medal" class="post-body-image">
-<img src="images/certificate.jpeg" alt="Certificate" class="post-body-image">
-This experience taught me a lot about teamwork, time management, and the importance of practice. It was
-a memorable experience that motivated me to participate in more competitions in the future.
+    My first hackathon in high school was definitely an experience to remember, especially since I ended up taking home 3rd place! The theme was all about education, and I focused on creating a website called EduMate using HTML, CSS, JavaScript, and IndexedDB. The idea behind EduMate was to help students keep track of their assignments, manage tasks, and know exactly what work was done or still in progress.
+
+  I was a bundle of nerves and excitement before the event—this was my first big competition! During the presentation, I could feel my hands shaking, but somehow I managed to deliver it with confidence. When the results were announced, I was honestly not expecting to win anything, so I was overjoyed when they called my name for 3rd place!
+
+  Here are some keepsakes from that day:
+  <img src="images/medal.jpeg" alt="Medal" class="post-body-image">
+  <img src="images/certificate.jpeg" alt="Certificate" class="post-body-image">
+
+  This whole experience taught me a lot about working in a team, managing my time effectively, and how crucial practice really is. It was such a memorable moment that it inspired me to seek out more competitions in the future!
     `,
     category: "competition",
     preview: "images/edumate.png",
@@ -25,21 +24,37 @@ a memorable experience that motivated me to participate in more competitions in 
     title: "TCP Chat System",
     date: "2025-12-15",
     body: `
-I built a TCP-based chat system using C language and socket programming.
-This system allows multiple clients to connect to a server and chat in real time over the same local network (LAN).
-Through this project, I learned how TCP works and how socket communication is implemented.
+    When I was in 10th grade, I have first study C language for first time, and I got little curiosity about C, but in that time I don't have resource to make project in C language,
+    I just made some games like number guessing, car rack game and some more in my school computer lab, after that I have started learning C language and I have so much intrest in C language then,
+    Like C language was so goated language almost everything made on C language.
+    
+    Now when I got laptop I have to made something in C language, But I don't know how to make because before that I have just made samll projects.
+    One day I have seen one post in X about UDP protocols, I have research about that What that means and got interested in it. After that I have learned about TCP and UDP protocols.
+    I got know difference between TCP and UDP protocols and how they work.
+    At first I have simple TCP chat system just server and client connect in same network and can send message to each other, but it have lots of bugs and issues and I have to improve it.
+    I have used AI, Youtube and Learning from others to make this project.
+    After that I have improved this project and make it better verison of its.
 
-How it works:
-- One device hosts the server using ./server.exe
-- Other devices connect using ./client.exe and the server IP address
+    features of this project:
+    - create a channel
+    - join existing channel
+    - real-time messaging using TCP protocols
+    - private chat between users
+    - admin control
+    - private channel 
+    - can share files
+    - emoji support
 
-The server is run using MSYS2 UCRT64 terminal.
+    This is amazing project that I have made in my High school, I have finished this project in 2 weeks and I have made it in C language,
+    We have to run server on one device and rest of users connect to that server using IP address of server.
+    I have used MSYS2 terminal to run server, we can connect from other devices using ./client.exe file to connect to server with the help of CMD pannel,but first we have to make file .exe file using makefile.
+    Then share .exe client file with other and host server in MSYS2 terminal and run server and connect to server from other devices but they must be in same network.
 
-<img src="images/TCP.png" alt="TCP Chat System" class="post-body-image">
+    Like this in image:
+    <img src="images/TCP.png" alt="TCP Chat System" class="post-body-image">
 
-This project was made for learning purposes and helped me understand networking deeply.
-It was challenging to debug connection issues at first, but eventually everything worked smoothly.
-    `,
+    I always want to make project in C language once dream to make it , when I was in secondary school.
+`,
     category: "projects",
     preview: "images/TCP.png",
     mediaType: "image"
