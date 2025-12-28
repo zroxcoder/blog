@@ -44,7 +44,7 @@ It was challenging to debug connection issues at first, but eventually everythin
   },
 
   {
-    title: "web chat system",
+    title: "Web Chat System",
     date: "2025-12-29",
     body: `
     I developed a web-based chat system using Node.js, Express, and socket.io as backend technologies, with HTML, CSS, and JS for the frontend.
@@ -73,7 +73,7 @@ It was challenging to debug connection issues at first, but eventually everythin
     Now problem I have faced making this project are lots of bugs in socket handling, message delivery delays, and ensuring smooth real-time communication.
     I have add calling feature too using WebRTC to allow users to make voice and video calls within the chat system, but later I have removed it due to performance issues on my local server, it was causing high CPU usage and Lag during calls and sometimes dropped the calls too.
     I will try to add it again When I deploy the server on better hardware.
-    In mobile devices, I g have faced most problems while making this project UI bugs, voice message recording issues, sidenav bar issues and lots of but any how I have fixed that too and make it mobile reponsive too.
+    In mobile devices, I have faced most problems while making this project UI bugs, voice message recording issues, sidenav bar issues and lots of but any how I have fixed that too and make it mobile reponsive too.
     There are lots of problems I have faced this are some, tunnel problems too..
 
     I have made this project because I always want my chat system...
