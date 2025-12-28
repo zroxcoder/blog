@@ -2,7 +2,7 @@
 blogmate.me on 27 dec 2025
 
 ## content post on 2025
-2 till now 29 dec
+3 till now 29 dec
 
 ## update
 Make update in design with better animations
@@ -15,3 +15,7 @@ hosting domain and site in vercel with github
 ## error logs
 error in more button in 1024px it goes close when mouse move.
 In mobile (pp error name was showing in pp)
+
+## improve logs
+profile section improvemet
+
