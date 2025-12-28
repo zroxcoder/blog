@@ -4,8 +4,215 @@
   <meta charset="UTF-8" />
   <title>Connect</title>
   <link rel="icon" type="image/x-icon" href="images/c.ico"/>
-
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Enhanced Main Content */
+    .content h1 {
+      color: #2c4fa3;
+      font-size: 32px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #2c4fa3;
+      display: inline-block;
+    }
+
+    .intro {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 20px;
+      padding: 15px;
+      background: linear-gradient(135deg, #f8f9ff 0%, #e8ecff 100%);
+      border-left: 4px solid #2c4fa3;
+      border-radius: 6px;
+    }
+
+    .intro bold {
+      color: #2c4fa3;
+      font-weight: bold;
+    }
+
+    /* Post List Styling */
+    #postList {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .post {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #e0e4f5;
+      box-shadow: 0 3px 10px rgba(44, 79, 163, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .post:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(44, 79, 163, 0.15);
+      border-color: #2c4fa3;
+    }
+
+    .post h3 {
+      color: #2c4fa3;
+      margin: 0 0 8px 0;
+      font-size: 20px;
+    }
+
+    .post-preview {
+      max-width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .post-preview-text {
+      color: #555;
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    .read-more-btn {
+      background: linear-gradient(135deg, #2c4fa3 0%, #1d357f 100%);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-family: inherit;
+      transition: all 0.3s ease;
+    }
+
+    .read-more-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(44, 79, 163, 0.3);
+    }
+
+    /* Post View */
+    #postView {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid #e0e4f5;
+      box-shadow: 0 3px 15px rgba(44, 79, 163, 0.1);
+    }
+
+    #postView h2 {
+      color: #2c4fa3;
+      font-size: 26px;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e0e4f5;
+    }
+
+    #postView button {
+      background: linear-gradient(135deg, #2c4fa3 0%, #1d357f 100%);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-family: inherit;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+
+    #postView button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(44, 79, 163, 0.3);
+    }
+
+    .post-body-image {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 15px 0;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Sidebar Enhancements */
+    .sidebar h3 {
+      color: #2c4fa3;
+      font-size: 18px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #2c4fa3;
+    }
+
+    .sidebar input[type="text"] {
+      width: 100%;
+      padding: 12px 15px;
+      border: 2px solid #e0e4f5;
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: inherit;
+      transition: all 0.3s ease;
+      box-sizing: border-box;
+    }
+
+    .sidebar input[type="text"]:focus {
+      outline: none;
+      border-color: #2c4fa3;
+      box-shadow: 0 0 0 3px rgba(44, 79, 163, 0.15);
+    }
+
+    .sidebar p {
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .sidebar a {
+      color: #2c4fa3;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      padding: 10px 18px;
+      background: linear-gradient(135deg, #e8ecff 0%, #dfe3f4 100%);
+      border-radius: 6px;
+      margin-top: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar a:hover {
+      background: linear-gradient(135deg, #2c4fa3 0%, #1d357f 100%);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    /* No Posts Message */
+    .no-posts {
+      text-align: center;
+      padding: 40px 20px;
+      color: #666;
+      font-style: italic;
+      background: #f8f9ff;
+      border-radius: 10px;
+      border: 2px dashed #d0d5e8;
+    }
+
+    /* Hidden Class */
+    .hidden {
+      display: none !important;
+    }
+
+    /* Responsive */
+    @media (max-width: 800px) {
+      .content h1 {
+        font-size: 26px;
+      }
+      
+      .post h3 {
+        font-size: 18px;
+      }
+      
+      .post-preview {
+        height: 150px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -33,29 +240,26 @@
   <main class="content">
     <h1>Blog Posts</h1>
     <p class="intro">
-    <bold>Welcome to my blog!</bold>
+      <bold>Welcome to my blog!</bold> Here I share my thoughts, projects, and experiences. Explore my posts below.
     </p>
-   
-  
 
     <div id="postList"></div>
 
     <div id="postView" class="hidden">
       <h2 id="postTitle"></h2>
-      <p id="postBody"></p>
-      <button onclick="goBack()">← Back</button>
+      <div id="postBody"></div>
+      <button onclick="goBack()">← Back to Posts</button>
     </div>
   </main>
 
   <!-- SIDEBAR -->
   <aside class="sidebar">
-    <h3>Search This Blog</h3>
+    <h3>Search Blog</h3>
     <input type="text" id="blogSearch" placeholder="Search by title..." />
-    
 
     <h3>About Me</h3>
     <p><strong>See profile for about me!</strong></p>
-    <a href="profile.html">View my complete profile</a>
+    <a href="profile.html">View Profile →</a>
   </aside>
 
 </div>
