@@ -14,3 +14,4 @@ hosting domain and site in vercel with github
 
 ## error logs
 error in more button in 1024px it goes close when mouse move.
+In mobile (pp error name was showing in pp)
