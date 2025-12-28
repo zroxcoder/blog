@@ -41,7 +41,50 @@ It was challenging to debug connection issues at first, but eventually everythin
     `,
     category: "projects",
     preview: "images/TCP.png"
+  },
+
+  {
+    title: "web chat system",
+    date: "2025-12-29",
+    body: `
+    I developed a web-based chat system using Node.js, Express, and socket.io as backend technologies, with HTML, CSS, and JS for the frontend.
+    This chat system allows multiple users to join chat rooms and communicate in real time over the internet.
+    features:
+    - create a chat room
+    - join existing chat rooms
+    - real-time messaging using websockets
+    - private chat between users
+
+    Through this project, I learned how to set up a Node.js sever, handle websocket connections with socket.io, and manage multiple clients.
+    I have used cloudflare tunnel to host the server on my local machine and make it accessible over the internet.
+    It was a fun project that helped me understand web development and real-time communication better.
+    I have used CSS for styling the chat interface to make it user-friendly.
+    I have add GIF support for chat messages to make the chat more lively and fun with custom emojis and user can add their own gifs link too.
+    Additionally, I have add voice message support using Web Audio to allow users to send and receive Voice messages in the chat, enhancing the communication experience, but
+    I am still working on it to improve the quality and usability, now it support 192kbps audio recording and playback.
+    I have add profile pictures for users to personalize their chat experience, and users can upload their own profile pictures.
+    Main problem I faced during development was handling multiple clients and ensuring smooth real-time messaging. At start, there were some delays and message loss, but after optimizing the socket handling I have resolved these issues.
+    Still there are some delays in message delivery when many users are connected, and when server starts getting high traffic, I am working on improving that. currently the server runs on my Local machine, so it has its limitations.
+    I'm planning to deploy the server on my own server bulit with better hardware to handle more users and impove performance.
+    I have add file sharing support to allow users to share images, videos, and documents in the chat.
+    I make this project with the last project (TCP chat system in C) in mind, so I have used similar concepts of socket programming and client-server architecture, but implemented it using web technologies for better accessibility and user experience.
+    I have to improve this project further by adding more features like message reactions, typing indicators, and better UI/UX design, I'm happy with the current UI/UX which I like so much, I have add glass UI design to make it look modern and sleek.
+
+    Now problem I have faced making this project are lots of bugs in socket handling, message delivery delays, and ensuring smooth real-time communication.
+    I have add calling feature too using WebRTC to allow users to make voice and video calls within the chat system, but later I have removed it due to performance issues on my local server, it was causing high CPU usage and Lag during calls and sometimes dropped the calls too.
+    I will try to add it again When I deploy the server on better hardware.
+    In mobile devices, I g have faced most problems while making this project UI bugs, voice message recording issues, sidenav bar issues and lots of but any how I have fixed that too and make it mobile reponsive too.
+    There are lots of problems I have faced this are some, tunnel problems too..
+
+    I have made this project because I always want my chat system...
+    I got to know that I can make any chat system using this tech.
+    <img src="images/lanchat.png" alt="Lan chat system" class="post-body-image">
+    I have to improve this project more and make it better verison of its.
+    `,
+    category: "projects",
+    preview: "images/lanchat.png"
   }
+
 ];
 
 // ===============================
