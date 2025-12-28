@@ -4,7 +4,7 @@
 let posts = [
   {
     title: "First Hackathon Competition",
-    date: "2025-10-26",
+    date: "2025-12-01",
     body: `
 My first hackathon competition in high school where I secured 3rd place.
 The competition theme was education, and I built a website called EduMate using HTML, CSS, JavaScript, and IndexedDB.
@@ -22,7 +22,7 @@ a memorable experience that motivated me to participate in more competitions in 
   },
   {
     title: "TCP Chat System",
-    date: "2025-11-05",
+    date: "2025-12-15",
     body: `
 I built a TCP-based chat system using C language and socket programming.
 This system allows multiple clients to connect to a server and chat in real time over the same local network (LAN).

@@ -7,6 +7,10 @@ blogmate.me on 27 dec 2025
 ## update
 Make update in design with better animations
 improve mobile design view in 4 size Desktop (>1024px), Tablet (768px-1024px), Mobile (<768px), Small Mobile (<480px)
+**add button**
 
 ## vercel logs
-hosting domain and site in vercel
+hosting domain and site in vercel with github
+
+## error logs
+error in more button in 1024px it goes close when mouse move.
