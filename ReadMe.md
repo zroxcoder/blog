@@ -1,7 +1,8 @@
 ## update
 Make update in design with better animations<br>
 improve mobile design view in 4 size Desktop (>1024px), Tablet (768px-1024px), Mobile (<768px), Small Mobile (<480px)<br>
-Add video/audio/youtube/viemo code
+Add video/audio/youtube/viemo code<br>
+Add blogmate library
 
 
 ## vercel logs
