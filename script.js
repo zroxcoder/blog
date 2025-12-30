@@ -101,6 +101,27 @@ I have to improve this project more and make it better verison of its.
     preview: "images/lanchat.png",
     mediaType: "image"
   },
+
+  {
+    title: "2025 Moment",
+    date: "2025-12-31",
+    body: `
+   This year is going to be a memorable one for me. A lot of things happened—some good, some bad, and some just normal. Overall, it was a year full of experiences and lessons.
+   First of all, I completed my secondary education, and now I am in high school. I enjoyed spending time with my friends and family so much. After finishing my secondary education, I moved to the capital city for my higher studies.
+   Initially, I had planned to study +2 in commerce, but I ended up choosing A Levels in non-science subjects. I selected A Levels because I am more interested in practical knowledge and want to study business and economics in depth. I could have studied +2 as well, but my goal is to go to a foreign country for higher education, and A Levels felt like a better path for me.
+   After my 10th-grade exams, I had a three-month holiday. I decided to enjoy the break, but after just one week, I came to the capital city. This was the first time I had lived alone without my family. In the beginning, I didn’t know what I would do or how I would manage. However, after some time, I became comfortable here.
+   I have always wanted to study outside my hometown, and when I got this chance, it felt like both a good and a bad decision—but mostly a good one. Many good things happened. The bad part was that I became lazy and careless with my work. Until 10th grade, my mom always took care of me and guided me. Suddenly, I had to manage everything on my own. It’s not that I didn’t do my work before, but my mom was always there to supervise me—now she isn’t.
+   After that, I prepared for +2 for two weeks, and then I learned about A Levels. I became interested in the course because I wanted a more practical learning approach rather than traditional courses. So, I joined A Levels.
+   For the first three months, we had foundation classes, and after that, regular classes started. I made new friends, but on the first day, I was extremely nervous and confused. I kept thinking whether I had made a mistake by choosing A Levels. Later, I realized I was wrong—it turned out to be one of the best decisions I have ever made. I learned many things that I would never have learned if I had chosen +2. +2 is also a good option, but I needed something different.
+   After three months, we had a welcome program, and it was an amazing experience. I enjoyed it so much. It was my first time attending such a big event; before that, I had only participated in small school programs.
+   When regular classes started, I slowly began making friends. At first, I was very introverted and shy. I didn’t talk to anyone because I felt nervous and didn’t know what to say. Over time, I started enjoying A Levels more and more.
+   During the first-term exams, protests started, and our exams were postponed three times. When the exams finally began, I had almost forgotten everything because I thought the first term would be canceled 😭🤣. I failed in one subject.
+   After that, many things happened. I participated in a hackathon and won third place. I had a lot of fun this year, and honestly, I don’t even know what else to write. But one thing is clear—this year was a turning point in my life. I learned so many things, not just academically but also personally.
+   I hope next year will be even better, and that I can achieve more goals in 2026. I want to work harder and improve myself more than I did this year.
+  Thank you, 2025, for all the memories and lessons.
+   `,
+   category: "momories"
+  },
   
 ];
 
