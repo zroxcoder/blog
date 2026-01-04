@@ -17,7 +17,7 @@ let posts = [
   This whole experience taught me a lot about working in a team, managing my time effectively, and how crucial practice really is. It was such a memorable moment that it inspired me to seek out more competitions in the future!
     `,
     category: "competition",
-    preview: "images/edumate.png",
+    preview: "images/edumates.png",
     mediaType: "image"
   },
   {
