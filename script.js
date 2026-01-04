@@ -8,7 +8,7 @@ let posts = [
     body: `
     My first hackathon in high school was definitely an experience to remember, especially since I ended up taking home 3rd place! The theme was all about education, and I focused on creating a website called EduMate using HTML, CSS, JavaScript, and IndexedDB. The idea behind EduMate was to help students keep track of their assignments, manage tasks, and know exactly what work was done or still in progress.
 
-  I was a bundle of nerves and excitement before the event—this was my first big competition! During the presentation, I could feel my hands shaking, but somehow I managed to deliver it with confidence. When the results were announced, I was honestly not expecting to win anything, so I was overjoyed when they called my name for 3rd place!
+    I was a bundle of nerves and excitement before the event—this was my first big competition! During the presentation, I could feel my hands shaking, but somehow I managed to deliver it with confidence. When the results were announced, I was honestly not expecting to win anything, so I was overjoyed when they called my name for 3rd place!
 
   Here are some keepsakes from that day:
   <img src="images/medal.jpeg" alt="Medal" class="post-body-image">
@@ -17,8 +17,6 @@ let posts = [
   This whole experience taught me a lot about working in a team, managing my time effectively, and how crucial practice really is. It was such a memorable moment that it inspired me to seek out more competitions in the future!
     `,
     category: "competition",
-    preview: "images/edumate.png",
-    mediaType: "image" // image, video, audio, embed
   },
   {
     title: "TCP Chat System",
