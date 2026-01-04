@@ -122,6 +122,31 @@ I have to improve this project more and make it better verison of its.
    `,
    category: "momories"
   },
+
+  {
+    title: "2026 Goals",
+    date: "2026-01-04",
+    body: `
+    As 2026 begins, I have set clear goals for myself that I am committed to completing this year.
+    My main goals for 2026 are:
+   -Complete 5 business case studies
+   -Achieve 1,000 GitHub contributions
+   -Build a complete BlogMate ecosystem
+   -Maintain 4 hours of daily study
+   -Conduct startup research
+   -Write a research paper
+   -Complete a self-study network course
+   -Upgrade existing projects
+
+   If I miss my 4 hours of study on any day, the time will accumulate, and I will make sure to complete it later. No matter what, I am determined to achieve these goals.
+
+   These are my main goals, and there are more I plan to accomplish along the way.
+
+   All the best to me. See you in 2027 — I hope I can proudly say that I completed my goals for 2026.
+
+    `,
+    category:"2026 goals"
+  },
   
 ];
 
