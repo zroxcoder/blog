@@ -1,30 +1,86 @@
-## update
-Make update in design with better animations<br>
-improve mobile design view in 4 size Desktop (>1024px), Tablet (768px-1024px), Mobile (<768px), Small Mobile (<480px)<br>
-Add video/audio/youtube/viemo code<br>
-Add blogmate library
+# Blogmate
 
+Blogmate is a comprehensive blogging platform and library designed for modern content creators. It features a responsive design, rich media support, and seamless integration with Vercel hosting.
 
-## vercel logs
-hosting domain and site in vercel with github<br>
-Last 30 days
+## Features
 
-    Fast Data Transfer 267.08 MB / 100 GB1 TB
-    Edge Requests 1.3K / 1M10M
-    Edge Request CPU Duration 0s / 1h
-    Fast Origin Transfer 0 / 10 GB100 GB
-    Microfrontends Routing 0 / 50K
-    ISR Reads 0 / 1M10M
-    ISR Writes 0 / 200K2M
-    Function Invocations 0 / 1M
-    Function Duration 0 / 100 GB-Hrs1,000 GB-Hrs
-    Fluid Provisioned Memory 0 / 360 GB-Hrs
+*   **Responsive Layout:** Optimized for all devices:
+    *   Desktop (>1024px)
+    *   Tablet (768px - 1024px)
+    *   Mobile (<768px)
+    *   Small Mobile (<480px)
+*   **Rich Media:** Native support for Video, Audio, YouTube, and Vimeo.
+*   **Enhanced UI:** Improved animations and profile section design.
+*   **Library Integration:** Includes `blogmate` library.
 
-## error logs
-error in more button in 1024px it goes close when mouse move.<br>
-In mobile (pp error name was showing in pp)
+## Documentation
 
-## improve logs
-profile section improvemet<br>
-web design update
+### Post Data Structures
 
+Blogmate supports various media types defined in the post configuration.
+
+#### Video
+```javascript
+{
+  title: "My Project Demo",
+  date: "2026-01-15",
+  body: `
+    Check out my latest project in action!
+    <video src="videos/demo.mp4" class="post-body-video" controls></video>
+    This demonstrates all the features I built.
+  `,
+  category: "demo",
+  preview: "videos/demo.mp4",
+  videoThumbnail: "images/demo-thumb.jpg", // Optional
+  mediaType: "video",
+  videoDuration: "3:45" // Optional
+}
+```
+
+#### Audio
+```javascript
+{
+  title: "Tech Podcast Episode 1",
+  date: "2026-01-20",
+  body: `
+    Listen to my thoughts on web development trends.
+    <audio src="audio/podcast.mp3" class="post-body-audio" controls></audio>
+  `,
+  category: "podcast",
+  mediaType: "audio"
+}
+```
+
+#### Vimeo / Embeds
+```javascript
+{
+  title: "Portfolio Showcase",
+  date: "2026-02-01",
+  body: `
+    My portfolio walkthrough:
+    <iframe src="https://player.vimeo.com/video/VIDEO_ID" class="post-body-embed" allowfullscreen></iframe>
+  `,
+  category: "showcase",
+  embedUrl: "https://player.vimeo.com/video/VIDEO_ID",
+  mediaType: "embed"
+}
+```
+
+## Changelog
+
+*   **Design:** Updated design with better animations.
+*   **Mobile:** Improved mobile views across 4 breakpoints.
+*   **System:** Added video/audio/youtube/vimeo code support.
+*   **Domain:** `blogmate.me` purchased on Dec 27, 2025.
+
+## Known Issues
+
+*   **Desktop (1024px):** "More" button closes unexpectedly on mouse move.
+*   **Mobile:** Profile picture (pp) error name display issue.
+
+## Hosting Status (Vercel)
+
+*   **Fast Data Transfer:** 267.08 MB / 100 GB
+*   **Edge Requests:** 1.3K / 1M
+*   **Edge Request CPU Duration:** 0s / 1h
+*   **Fluid Provisioned Memory:** 0 / 360 GB-Hrs
