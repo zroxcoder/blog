@@ -147,6 +147,22 @@ I have to improve this project more and make it better verison of its.
     `,
     category:"2026 goals"
   },
+
+  {
+    title: "Nosofy",
+    date: "2026-01-09",
+    body: `
+    I have make one project for my hackathon called EduMate. Now I'm thinking to convert into prouductivity web app and later app and rename it too Nosofy.
+    I have add new features in it and improve old one, with more better features. Make exist chatbot more better, before chatbot can only answer the normal reponse helping to do what first and show pending tasks.
+    Now I have improve it and make it suggestion, tips, helping etc. Add new features like expenses trackers, watch list and improve chat bot to answer it more better, can help user to suggest what they should watch, expenses tips, study tips with resources.
+    Add streak days, mission to achive, improve dashboard. I have rename it Nosofy because EduMate means tools for a education, and I have to make it more better and features. so, I have rename it too Nosofy which means The name "Nosofy" appears to be a blend of "nos" and a suffix that suggests action or a state. "Nos" could be derived from the Latin word "nos," meaning "we" or "us," emphasizing collaboration and community, which aligns with the app's focus on sharing and chatting with others. The suffix "-ofy" suggests transformation or the process of making something into a particular state, akin to "amplify" or "modify." Together, "Nosofy" conveys a sense of enhancing collective productivity and interaction, making it fitting for a platform designed to save, share, and discuss projects.
+    Planning to add chat system, and games in it for more better learning, shareing, texting, etc. But first I have to make core website of it, 
+    I will start working on it after exam, and make it complete docs of it with features plan. I have already make MVP model of it now just making complete Nosofy with core/main fetaures.
+    I have 10 days break, and I'm going back home I will work on this project at that time. 
+    I will post more about this once I start working on it. 
+    `,
+    category:"project"
+  },
   
 ];
 
