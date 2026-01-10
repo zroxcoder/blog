@@ -161,8 +161,26 @@ I have to improve this project more and make it better verison of its.
     I have 10 days break, and I'm going back home I will work on this project at that time. 
     I will post more about this once I start working on it. 
     `,
-    category:"project"
+    category:"Nosofy update"
   },
+
+  {
+    title: "Nosofy - progress",
+    date: "2026-01-11",
+    body: `
+    Just reached home at around morning 6 am, after reaching home I feel happy and little bit exctied to visit home after long time. 
+    Nothing much I have done today, after eating lunch and breakfast, I slept for 4-5 hours after wakeing up I have eaten noodles and go outside with friends.
+    Enojyable day and after returning back home I have eaten fish after long time, it was my fav, and spend 2 hours with mom and dad after so long time.
+    After that I have done some work on nosofy, but still at old EduMate, I haven't made nosofy website still. I'm still working on EduMate code, pretty good working, I have update db code and add expenses, watchlist import/export data working like other and add new features called passwords I will rename it to vault later.
+    I have add encryption for storing password secure and leak in db too, it shows in hash in indexddb too. When we export it's data it still in hash form.
+    Update code according to hash working function using web crypto and js hashing.
+    pretty good improvement in it. 
+    I'm working in chat system which I will add in this later.
+    For now everything going well hope I will add more things in it soon and starts working on Nosofy from tomorrow.
+    `,
+    category:"Nosofy update"
+  },
+  
   
 ];
 
