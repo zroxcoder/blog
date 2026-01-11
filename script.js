@@ -181,6 +181,18 @@ I have to improve this project more and make it better verison of its.
     category:"Nosofy update"
   },
   
+  {
+    title: "Nosofy - progress",
+    date: "2026-01-12",
+    body:`
+    Today was so much busy day, I have lots of works at day time, I was wake up at 11 am my mom have waked up me... after that I have eaten last night fish, then I have gone to buy shoes.
+    After coming back I have spend my time sitting at sunlight and at shop, after 5 pm I eat snacks and then again gone for buying clothes. Then eat dinner, after that I have study for while and after that I have work on EduMate add new features cloudhub where user can manage their cloud, emails, other services as single place.
+    I have working in this features little bit more chnages and improvement need in it, I will do that as soon as I can, and for now I'm thinking for new features, I don't know next what I should add.
+    I'm working on that and first version of Nosofy I have started working on it. I have layout everything for that and little bit research.
+    For toady this much only!
+    `,
+    category : "Nosofy update"
+  }
   
 ];
 
