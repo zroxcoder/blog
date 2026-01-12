@@ -192,6 +192,19 @@ I have to improve this project more and make it better verison of its.
     For toady this much only!
     `,
     category : "Nosofy update"
+  },
+
+  {
+    title: "Nosofy - progress",
+    date: "2026-01-12",
+    body: `
+    Today 12 Jan 2026 I have started my morning again late waking up at 11 am then eat lunch, after that I have study for sometimes sitting at roof. 
+    At 1 pm I slept for 3 hours and wake up at 4 pm then I have eaten snacks then wash meat and at 6 pm again some little bit works, then after dinner I have start working In Nosofy I hava make ICO (favicon), then github repo and start working in dashboard.
+    Still working in dashboard code, I have changed dashboard function and it's old function makeing it more useful now. I have selected light green and lime green with yellow green(lime)shade as color platter for app, website, and add new things Nosofy academy for providing free courses and learning skills to user.
+    Dashboard working will be finished today, I have changed db to v12 and nosofy db.
+    Let see what happend next, I'm wokring in it, time was 10 pm now and I'm not sleep anymore let's see how long I can work.
+    I'm writing this while making too.
+    `
   }
   
 ];
