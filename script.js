@@ -204,7 +204,22 @@ I have to improve this project more and make it better verison of its.
     Dashboard working will be finished today, I have changed db to v12 and nosofy db.
     Let see what happend next, I'm wokring in it, time was 10 pm now and I'm not sleep anymore let's see how long I can work.
     I'm writing this while making too.
-    `
+    `,
+     category : "Nosofy update"
+  },
+
+  {
+    title: "Nosofy - progress",
+    date: "2026-01-13",
+    body:`
+    Today 13 Jan 2026, Woke up at 1 pm after my mom wake up me,, last night I slept at 4 am as always then after waking up, I eat lunch and then watch MR Robot series, 
+    then after 3-4 pm I slept after eating snacks and wake up at dinner time, then I have eaten my dinner then I watch mobile phone for 2 hours then at 10:40 pm I have starts working at Nosofy, I have work little bit in day time also but not more, I have add new things in Notes features it looks cool now.
+    I have add color platter, Now we can select color of card and chnage it, this look so cool, I didn't except this will be so good ! For now this much things enough. For now I have focus on lanuch of Nosofy V1.
+    I'm working on that, I'm writting docs along with codign and debugging security checks, working flow, flowchart, algorithm.
+    Till now everything going perfect and as I think, let see what happend next.
+    For today this much only ! I think I have to share my life things too with this Nosofy, I will share that with other post maybe, I have to write about myself..Thinking to write that too !
+    `,
+     category : "Nosofy update"
   }
   
 ];
