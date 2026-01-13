@@ -84,3 +84,7 @@ Blogmate supports various media types defined in the post configuration.
 *   **Edge Requests:** 1.3K / 1M
 *   **Edge Request CPU Duration:** 0s / 1h
 *   **Fluid Provisioned Memory:** 0 / 360 GB-Hrs
+
+
+## Error at github page
+* **At 14 jan github page crash didn't work"**

@@ -220,7 +220,7 @@ I have to improve this project more and make it better verison of its.
     For today this much only ! I think I have to share my life things too with this Nosofy, I will share that with other post maybe, I have to write about myself..Thinking to write that too !
     `,
      category : "Nosofy update"
-  }
+  },
   
 ];
 
