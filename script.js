@@ -221,6 +221,25 @@ I have to improve this project more and make it better verison of its.
     `,
      category : "Nosofy update"
   },
+
+  {
+    title: "Nosofy - progress",
+    date: "2026-01-14",
+    body:`
+    Today 14 Jan 2026, again same like always I wake up at 1 pm, huh I have to change my this habit, idk but I can't change it, I always sleep late form last 2 years.
+    Something happens 2 years ago after that I can't sleep at night, before that too I always sleep late but not this much, before I sleep at 12-1 am but nowdays 3-4 am sometimes at 6 am also, idk how to fix this this is not good for me, but i can't do anything about this,
+    I just accept this as much my life.. I will fix this once I die 😅😶‍🌫️ maybe before that I can't do this.
+    Today I haven't work on Nosoofy, nothing I have done today ! Idk but I haven't done single work today.. As always once I start something I can't focus on that for long time, I try to focus but I can't focus on it.
+    I will do my best to complete this as I think to finish this within month or maybe 2 month, but I will complete this any how.
+    I have lots of things to do but I can't focus on single thing.
+    Lots of my story.. I'm writing this all for myself.. I don't care I make something or not, 
+    when I read this after 10-20 years I can rember this memories. I want to my life as I want always.
+    So future myself you always do what you have promised yourself 10-20 years before. I'm 17 yrs old now this year I will be 18 years old, but still doing what I have tell myself when I was 5 years old,
+    Living a life as peace not a pressure life.
+    I will live my life peace 🌸🕊️
+    `,
+     category : "Nosofy update"
+  },
   
 ];
 
