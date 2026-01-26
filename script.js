@@ -240,6 +240,30 @@ I have to improve this project more and make it better verison of its.
     `,
      category : "Nosofy update"
   },
+  {
+    title: "Long time no see!",
+    date:"2026-01-26",
+    body:`
+    I have posted last update on 14 Jan 2026, after that I was busy in my studies and exams, after finishing my exam I have lose my interest in coding and making projects, as always I have this problem, I can't focus on single things for long time.
+    I have try lots of time to focus on single project but I can't do that, I always start something new and leave old one, else I get bored of that project and leave it.
+    I will start working on Nosofy again soon, I have to complete it as soon as possible, I have plan to lanuch it in Feb 2026, if i can complete it till then, else I will take 2-3 months more to complete it, 
+    but I was thinking to lanuch it as soon as possible it's V1 version only and get feedback from user and improve it later with new features.
+    I have to complete git commit of 1000 this year too and I have push 74 till now, I have to push 100+ commit per month to achieve that goal.
+
+    This is past things why I stop working on Nosofy, Now I'm back again and I will start working on it.
+    I have take part in SCI-TECH fair too, I have made project on "smart Enegry monitoring and wastage detection system", for this I have used ESP32 microcontroller, current sensor, LCD display, buzzer, breadboard, jumper wires, PIR sensor and 2-3 more things.
+    Basically this helps to track energy consumption in home and detect wastage of energy, like if light is on and no one is in room it will buzz alert and show message on LCD display to turn off the light and in website dashboard it will show energy consumption graph, daily, weekly, monthly consumption and other things, 
+    and email notification too.
+    Below is video of that project demo:
+    <video src="images/demo.mp4" class="post-body-video" controls></video>
+    This is demo video of that project, I have make working prototype of it, 
+    It was selected for intra college level competiton, which held on 30 Jan 2026 upcoming friday.
+    I will post more update about this project and Nosofy soon.
+    `,
+    category:"Nosofy update",
+    preview:  "images/demo.mp4",
+    mediaType: "video",
+    },
   
 ];
 
