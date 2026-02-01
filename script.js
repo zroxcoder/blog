@@ -264,6 +264,19 @@ I have to improve this project more and make it better verison of its.
     preview:  "images/demo.mp4",
     mediaType: "video",
     },
+
+    {
+      title:"SCI-TECH fair 2026 - experience",
+      date:"2026-02-01",
+      body:`
+      on 30 Jan 2026, I have participated in Intra college Level SCI-TECH fair competiton, for that I have made project on "Smart Energy monitoring and wastage detection system",
+      It was fun experience, We have to reach at college before 8 am, I was group leader of my group, and I reach college at 7:55 am, 5 mins before the deadline, after reaching college I have meet my group members only 2 members came and 1 me, after that we go to ask our stall number and then we have to setup our stall.
+      My project was with my friends who live at college hostel, then we go to take project from his room, he was sleeping at that time, after that we wake up him and take project from his room, then we go to our stall and setup and rest 2 members also reach there.
+      After that we have 2 hours to setup our project and prepare for presentation, we have setup our project and test it once again, after that we have prepared our presentation and practice it once.
+      At 10 am people starts coming to see stalls and projects, we have to explain our project to visitors and judges, it was fun experience.
+      `,
+        category:"SCI-TECH fair",
+    },
   
 ];
 
